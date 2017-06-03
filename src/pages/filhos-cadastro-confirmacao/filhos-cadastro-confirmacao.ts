@@ -15,7 +15,11 @@ import { FilhosDetalhePage } from '../filhos-detalhe/filhos-detalhe';
 })
 export class FilhosCadastroConfirmacaoPage {
 
+  private filho: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.filho = this.navParams.data.filho;
+
   }
 
   ionViewDidLoad() {
@@ -24,7 +28,7 @@ export class FilhosCadastroConfirmacaoPage {
 
   onOKClick(event) {
     this.navCtrl.push(FilhosDetalhePage, {
-      //NavParams
+      filho: this.filho
     });
   }
 }

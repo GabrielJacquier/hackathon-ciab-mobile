@@ -31,9 +31,9 @@ export class FilhosCadastroPage {
     console.log('ionViewDidLoad FilhosCadastroPage');
   }
 
-  onCadastrarClick(event, filho) {
+  onCadastrarClick(event) {
     this.navCtrl.push(FilhosCadastroConfirmacaoPage, {
-      filho: filho
+      filho: this.filho
     });
   }
 }
