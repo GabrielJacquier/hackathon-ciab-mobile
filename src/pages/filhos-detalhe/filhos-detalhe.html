@@ -8,18 +8,20 @@
 
   <ion-navbar>
     <ion-title>filhos-detalhe</ion-title>
-    <p>{{filho.nome}}</p>
-    <p>{{filho.idade}} anos</p>
-    <p>Saldo: {{filho.saldo}}</p>
+    <div class="" (click)="onPerfilClick($event)">
+        <p>{{filho.nome}}</p>
+        <p>Saldo: {{filho.saldo}}</p>
+    </div>
+    <div (click)="onTimelineClick($event)">
+        <p>{{filho.idade}} anos</p>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
-  
-
   <ion-segment [(ngModel)]="visoes" color="primary">
     <ion-segment-button value="metas">
       Metas
@@ -31,37 +33,26 @@
 
   <div [ngSwitch]="visoes">
     <ion-list *ngSwitchCase="'metas'">
-      <ion-item>
-        sfsdf
-      </ion-item>
-      <ion-item>
-       sdfsdf
-      </ion-item>
-      <ion-item>
-        sdfsdfsd
+      <ion-item *ngFor="let meta of filho.metas">
+        <p>{{meta.nome}}</p>
+        <p>Meta: R$ {{meta.valorMeta | number:'1.2-2'}}</p>
+        <p>Acumulado: R$ {{meta.valorAcumulado | number:'1.2-2'}}</p>
+        <p>Historico: {{meta.historico}}</p>
       </ion-item>
     </ion-list>
 
     <ion-list *ngSwitchCase="'extrato'">
-      <ion-item>
-        1234
-      </ion-item>
-      <ion-item>
-        34532
-      </ion-item>
-      <ion-item>
-        12345
+      <ion-item *ngFor="let detalhe of filho.extrato">
+        <p>{{detalhe.descricao}}</p>
+        <p>R$ {{detalhe.valor | number:'1.2-2'}}</p>
       </ion-item>
     </ion-list>    
   </div>
 
-  <button ion-button color="primary" block (click)="onPerfilClick($event)">Perfil</button>
-  <button ion-button color="primary" block (click)="onTimelineClick($event)">Timeline</button>
-
   <ion-fab right bottom>
     <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
     <ion-fab-list side="left">
-      <button ion-fab (click)="onMesadaClick($event)">
+      <button ion-fab (click)="($event)">
         <ion-icon name="logo-facebook"></ion-icon>
       </button>
       <button ion-fab (click)="onMetaClick($event)"><ion-icon name="logo-twitter"></ion-icon></button>

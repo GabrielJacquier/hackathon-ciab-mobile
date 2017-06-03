@@ -17,12 +17,23 @@ export class FilhosPage {
       saldo: 1000,
       idade: 19,
       previdencia: 289,
-      extrato: [],
+      extrato: [
+        {
+          descricao: "Mc Donalds",
+          valor: 23.80
+        }
+      ],
       metas: [
         {
           nome: 'Comprar celular',
           valorMeta: 1000,
           valorAcumulado: 500,
+          historico: []
+        },
+        {
+          nome: 'Comprar Ingresso Show',
+          valorMeta: 300,
+          valorAcumulado: 50,
           historico: []
         }
       ]
