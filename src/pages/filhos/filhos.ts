@@ -15,7 +15,7 @@ export class FilhosPage {
     this.items.push({
       nome: 'Tamires',
       saldo: 1000,
-      idade: 19,
+      idade: 17,
       previdencia: 289,
       extrato: [
         {

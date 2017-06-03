@@ -12,52 +12,40 @@
         <p>{{filho.nome}}</p>
         <p>Saldo: {{filho.saldo}}</p>
     </div>
-    <div (click)="onTimelineClick($event)">
+    <div class="" (click)="onTimelineClick($event)">
         <p>{{filho.idade}} anos</p>
     </div>
-
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-segment [(ngModel)]="visoes" color="primary">
-    <ion-segment-button value="metas">
-      Metas
-    </ion-segment-button>
-    <ion-segment-button value="extrato">
-      Extrato
-    </ion-segment-button>
-  </ion-segment>
+  <ion-list *ngSwitchCase="'metas'">
+    <ion-item *ngFor="let meta of filho.metas">
+      <p>{{meta.nome}}</p>
+      <p>Meta: R$ {{meta.valorMeta | number:'1.2-2'}}</p>
+      <p>Acumulado: R$ {{meta.valorAcumulado | number:'1.2-2'}}</p>
+      <p>Historico: {{meta.historico}}</p>
+    </ion-item>
+  </ion-list>
 
-  <div [ngSwitch]="visoes">
-    <ion-list *ngSwitchCase="'metas'">
-      <ion-item *ngFor="let meta of filho.metas">
-        <p>{{meta.nome}}</p>
-        <p>Meta: R$ {{meta.valorMeta | number:'1.2-2'}}</p>
-        <p>Acumulado: R$ {{meta.valorAcumulado | number:'1.2-2'}}</p>
-        <p>Historico: {{meta.historico}}</p>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'extrato'">
-      <ion-item *ngFor="let detalhe of filho.extrato">
-        <p>{{detalhe.descricao}}</p>
-        <p>R$ {{detalhe.valor | number:'1.2-2'}}</p>
-      </ion-item>
-    </ion-list>    
-  </div>
 
   <ion-fab right bottom>
-    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <button ion-fab color="light"> <ion-icon name="more"></ion-icon></button>
     <ion-fab-list side="left">
       <button ion-fab (click)="($event)">
-        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="medal"></ion-icon>
       </button>
-      <button ion-fab (click)="onMetaClick($event)"><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon> Um testexto teste</button>
-      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab (click)="onMetaClick($event)">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
     </ion-fab-list>
   </ion-fab>
   
