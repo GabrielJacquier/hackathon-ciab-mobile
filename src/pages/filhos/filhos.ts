@@ -14,6 +14,7 @@ export class FilhosPage {
     this.items = [];
     this.items.push({
       nome: 'Tamires Polis',
+      icon: '../assets/tamires-thumb.jpg',
       saldo: 1000,
       idade: 19,
       previdencia: 289,
