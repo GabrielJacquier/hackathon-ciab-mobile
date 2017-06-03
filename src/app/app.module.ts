@@ -9,9 +9,6 @@ import { FilhosCadastroPage } from '../pages/filhos-cadastro/filhos-cadastro';
 import { FilhosCadastroConfirmacaoPage } from '../pages/filhos-cadastro-confirmacao/filhos-cadastro-confirmacao';
 import { FilhosDetalhePage } from '../pages/filhos-detalhe/filhos-detalhe';
 import { MesadaPage } from '../pages/mesada/mesada';
-import { MetaPage } from '../pages/meta/meta';
-import { MetaCadastroPage } from '../pages/meta-cadastro/meta-cadastro';
-import { MetaDetalhePage } from '../pages/meta-detalhe/meta-detalhe';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { TimelinePage } from '../pages/timeline/timeline';
 
@@ -27,9 +24,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FilhosCadastroConfirmacaoPage,
     FilhosDetalhePage,
     MesadaPage,
-    MetaPage,
-    MetaCadastroPage,
-    MetaDetalhePage,
     PerfilPage,
     TimelinePage,
   ],
@@ -46,9 +40,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FilhosCadastroConfirmacaoPage,
     FilhosDetalhePage,
     MesadaPage,
-    MetaPage,
-    MetaCadastroPage,
-    MetaDetalhePage,
     PerfilPage,
     TimelinePage,
   ],
