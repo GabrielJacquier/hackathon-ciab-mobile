@@ -15,16 +15,23 @@ import { FilhosCadastroConfirmacaoPage } from '../filhos-cadastro-confirmacao/fi
 })
 export class FilhosCadastroPage {
 
-  filho = {
-    nome: 'Emerson',
+  private filho = {
+    nome: 'Niel Polis',
     cpf: '535.525.811-54',
     tel: '(15)98877-2233',
     senha: '4567',
-    datNasc: '06/08/2005'
+    datNasc: '06/08/2006',
+    idade: '11',
+    saldo: 0,
+    previdencia: 0,
+    extrato: [],
+    metas: []
   };
 
+  private items: Array<any>;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+    this.items = this.navParams.data.items;
   }
 
   ionViewDidLoad() {
@@ -32,6 +39,7 @@ export class FilhosCadastroPage {
   }
 
   onCadastrarClick(event) {
+    this.items.push(this.filho);
     this.navCtrl.push(FilhosCadastroConfirmacaoPage, {
       filho: this.filho
     });

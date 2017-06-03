@@ -14,8 +14,12 @@ export class FilhosPage {
     this.items = [];
     this.items.push({
       nome: 'Tamires Polis',
+      cpf: '635.535.851-54',
+      tel: '(15)98877-6532',
+      senha: '4567',
+      datNasc: '06/08/2000',
       saldo: 1000,
-      idade: 19,
+      idade: 17,
       previdencia: 289,
       extrato: [
         {
@@ -42,7 +46,7 @@ export class FilhosPage {
 
   onAddClick(event) {
     this.navCtrl.push(FilhosCadastroPage, {
-      // NavParams
+     items: this.items
     });
   }
 
