@@ -19,9 +19,11 @@ import { TimelinePage } from '../timeline/timeline';
 export class FilhosDetalhePage {
 
   private filho:any;
+  private visoes:String;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.filho = this.navParams.data.filho;
+    this.visoes = 'metas';
   }
 
   ionViewDidLoad() {
@@ -50,5 +52,9 @@ export class FilhosDetalhePage {
     this.navCtrl.push(MetaPage, {
       filho: this.filho
     });
+  }
+
+  onSegmentChanged(event) {
+
   }
 }
