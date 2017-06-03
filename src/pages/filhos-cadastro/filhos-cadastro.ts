@@ -15,16 +15,25 @@ import { FilhosCadastroConfirmacaoPage } from '../filhos-cadastro-confirmacao/fi
 })
 export class FilhosCadastroPage {
 
+  filho = {
+    nome: 'Emerson',
+    cpf: '535.525.811-54',
+    tel: '(15)98877-2233',
+    senha: '4567',
+    datNasc: '06/08/2005'
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FilhosCadastroPage');
   }
 
-  onCadastrarClick(event) {
+  onCadastrarClick(event, filho) {
     this.navCtrl.push(FilhosCadastroConfirmacaoPage, {
-      // NavParams
+      filho: filho
     });
   }
 }
