@@ -13,7 +13,7 @@ export class FilhosPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.items = [];
     this.items.push({
-      nome: 'Tamires',
+      nome: 'Tamires Polis',
       saldo: 1000,
       idade: 19,
       previdencia: 289,
