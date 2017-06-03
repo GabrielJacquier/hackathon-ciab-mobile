@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MesadaPage } from '../mesada/mesada';
-import { MetaPage } from '../meta/meta';
 import { PerfilPage } from '../perfil/perfil';
 import { TimelinePage } from '../timeline/timeline';
 
@@ -44,12 +43,6 @@ export class FilhosDetalhePage {
 
   onMesadaClick(event) {
     this.navCtrl.push(MesadaPage, {
-      filho: this.filho
-    });
-  }
-
-  onMetaClick(event) {
-    this.navCtrl.push(MetaPage, {
       filho: this.filho
     });
   }

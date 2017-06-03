@@ -1,23 +1,22 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
-  </ion-navbar>
+        <ion-title>List</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
-      {{item.nome}}
-      <div class="item-note" item-right>
-        {{item.saldo}}
-      </div>
-    </button>
-  </ion-list>
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
+       {{item.nome}}
+      <ion-badge item-right>Idade {{item.idade}}</ion-badge>
+        <p>Saldo R${{item.saldo | number: '1.2-2'}}</p>
+      </button>
+    </ion-list>
 
-  <ion-fab right bottom>
-    <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+    <ion-fab right bottom>
+        <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
 </ion-content>
