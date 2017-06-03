@@ -8,6 +8,9 @@
 
   <ion-navbar>
     <ion-title>filhos-detalhe</ion-title>
+    <p>{{filho.nome}}</p>
+    <p>{{filho.idade}} anos</p>
+    <p>Saldo: {{filho.saldo}}</p>
   </ion-navbar>
 
 </ion-header>
@@ -15,9 +18,45 @@
 
 <ion-content padding>
 
+  
+
+  <ion-segment [(ngModel)]="visoes" color="primary">
+    <ion-segment-button value="metas">
+      Metas
+    </ion-segment-button>
+    <ion-segment-button value="extrato">
+      Extrato
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="visoes">
+    <ion-list *ngSwitchCase="'metas'">
+      <ion-item>
+        sfsdf
+      </ion-item>
+      <ion-item>
+       sdfsdf
+      </ion-item>
+      <ion-item>
+        sdfsdfsd
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'extrato'">
+      <ion-item>
+        1234
+      </ion-item>
+      <ion-item>
+        34532
+      </ion-item>
+      <ion-item>
+        12345
+      </ion-item>
+    </ion-list>    
+  </div>
+
   <button ion-button color="primary" block (click)="onPerfilClick($event)">Perfil</button>
   <button ion-button color="primary" block (click)="onTimelineClick($event)">Timeline</button>
-
 
   <ion-fab right bottom>
     <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
@@ -26,8 +65,9 @@
         <ion-icon name="logo-facebook"></ion-icon>
       </button>
       <button ion-fab (click)="onMetaClick($event)"><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon> Um testexto teste</button>
       <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>
+  
 </ion-content>
