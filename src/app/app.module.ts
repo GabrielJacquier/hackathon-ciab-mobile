@@ -13,6 +13,7 @@ import { PerfilPage } from '../pages/perfil/perfil';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { NumeroPipe } from '../pipes/numero/numero';
+import { SaudePage } from '../pages/saude/saude';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NumeroPipe } from '../pipes/numero/numero';
     MesadaPage,
     PerfilPage,
     NumeroPipe,
+    SaudePage,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { NumeroPipe } from '../pipes/numero/numero';
     FilhosDetalhePage,
     MesadaPage,
     PerfilPage,
+    SaudePage,
   ],
   providers: [
     StatusBar,
