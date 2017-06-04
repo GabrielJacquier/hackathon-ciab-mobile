@@ -19,16 +19,23 @@
       <span class="moeda">R$</span>
       <span class="valor">{{filho.saldo | number:'1.2-2'}}</span>
     </div>
+
     <div class="waves">
-      <div class="wave -one" style=""></div>
-      <div class="wave -two" style=""></div>
+      <div class="wave -one"></div>
+      <div class="wave -two"></div>
       <div class="wave -three"></div>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:8px" text-center>
+      <div class="label">Saúde financeira</div>
+      <ion-icon name="happy" style="font-size:4rem"></ion-icon>
     </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div *ngIf="filho.detalhesSaldo == null || filho.detalhesSaldo.length == 0">
+  <div *ngIf="filho.detalhesSaldo == null || filho.detalhesSaldo.length == 0" class="empty" text-center>
+    <ion-icon name="basket"></ion-icon>
     <h1>Ainda sem movimentações</h1>
   </div>
   <ion-list *ngIf="filho.detalhesSaldo && filho.detalhesSaldo.length > 0">

@@ -19,6 +19,19 @@ page-filhos {
       }
     }
 
+    ion-avatar {
+      position: relative;
+
+      ion-icon[name="happy"] {
+        font-size: 3rem;
+        position: absolute;
+        right: -12px;
+        bottom: -12px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+
     .saldo-label {
       font-size:1.2rem;
       font-weight:bold;

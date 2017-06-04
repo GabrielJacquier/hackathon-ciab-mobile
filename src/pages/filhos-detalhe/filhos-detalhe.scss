@@ -9,12 +9,24 @@ page-filhos-detalhe {
   }
 
   .detalhe {
-      .data {
-          float:left;
-      }
+    .data {
+        float:left;
+    }
 
-      .valor {
-          float: right;
-      }
+    .valor {
+        float: right;
+    }
+  }
+
+  .empty {
+    color: #888;
+    h1 {
+      padding:8px;
+    }
+
+    ion-icon {
+      margin-top: 20px;
+      font-size: 5rem;
+    }
   }
 }
