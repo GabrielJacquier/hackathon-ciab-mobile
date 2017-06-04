@@ -6,25 +6,40 @@
     <ion-title>KiBankers</ion-title>
   </ion-navbar>
   <ion-toolbar>
-    <ion-thumbnail item-center>
-      <img src="../assets/kibank-toolbar.png" class="toolbar">
-    </ion-thumbnail>
+    <div class="image">
+      <img src="../assets/icon-kids.svg">
+    </div>
+    <div class="waves">
+      <div class="wave -one" style=""></div>
+      <div class="wave -two" style=""></div>
+      <div class="wave -three"></div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
-       <ion-thumbnail item-left>
-            <img src="{{item.icon}}" class="img-circle">
-        </ion-thumbnail>
-        {{item.nome}}
-      <ion-badge item-right>Idade {{item.idade}}</ion-badge>
-        <p>Saldo R${{item.saldo | number: '1.2-2'}}</p>
-      </button>
+    <button class="filho" ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
+      <ion-avatar item-left>
+        <img src="{{item.icon}}">
+      </ion-avatar>
+
+      <div>
+        <div class="nome">{{item.nome}}</div>
+        <ion-badge>{{item.idade}} anos</ion-badge>
+      </div>
+
+      <div item-end>
+        <div class="saldo-label">Saldo</div>
+        <div class="saldo">
+          <span class="moeda">R$</span>
+          <span class="valor">{{item.saldo | number: '1.2-2'}}</span>
+        </div>
+      </div>
+    </button>
   </ion-list>
 
   <ion-fab right bottom>
-    <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
+    <button ion-fab (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
   </ion-fab>
 </ion-content>

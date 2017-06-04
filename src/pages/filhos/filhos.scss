@@ -1,8 +1,42 @@
 page-filhos {
-    .toolbar {
-        height: 50px;
+  .image {
+    text-align: center;
+    img {
+      margin: 0 auto;
+      margin-top: -40px;
+      width: 180px;
+      z-index: 100;
     }
-    .img-circle {
-        border-radius: 50%;
+  }
+
+  .filho {
+    color: #444;
+
+    ion-thumbnail {
+      img {
+        width: 60px;
+        height: 60px;
+      }
     }
+
+    .saldo-label {
+      font-size:1.2rem;
+      font-weight:bold;
+    }
+
+    .saldo {
+      position: relative;
+
+      .valor {
+        font-size: 2rem;
+        padding-left: 20px;
+      }
+
+      .moeda {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 4px;
+      }
+    }
+  }
 }
