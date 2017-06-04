@@ -1,20 +1,20 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle>
+  <ion-navbar>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-        <ion-title>List</ion-title>
-    </ion-navbar>
-    <ion-toolbar>
-        <ion-thumbnail item-center>
-            <img src="../assets/kibank-toolbar.png" class="toolbar">
-        </ion-thumbnail>
-    </ion-toolbar>
+    <ion-title>KiBankers</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-thumbnail item-center>
+      <img src="../assets/kibank-toolbar.png" class="toolbar">
+    </ion-thumbnail>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
        <ion-thumbnail item-left>
             <img src="{{item.icon}}" class="img-circle">
         </ion-thumbnail>
@@ -22,9 +22,9 @@
       <ion-badge item-right>Idade {{item.idade}}</ion-badge>
         <p>Saldo R${{item.saldo | number: '1.2-2'}}</p>
       </button>
-    </ion-list>
+  </ion-list>
 
-    <ion-fab right bottom>
-        <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
+  <ion-fab right bottom>
+    <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>
