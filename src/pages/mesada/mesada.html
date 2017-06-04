@@ -14,32 +14,32 @@
   <ion-list>
      <ion-item>
       <ion-label stacked>Valor Depósito</ion-label>
-      <ion-input type="number" value="{{mesada.val}}"></ion-input>
+      <ion-input type="number" [(ngModel)]="mesada.valor" ngDefaultControl></ion-input>
     </ion-item>
 
      <ion-item>
       <ion-label stacked>Data do Primeiro Depósito</ion-label>
-      <ion-input type="text"  value="{{mesada.data}}"></ion-input>
+      <ion-input type="text" value="{{mesada.data}}"></ion-input>
     </ion-item>
   </ion-list>
 
-  <ion-list radio-group >
+  <ion-list radio-group [(ngModel)]="mesada.frequencia">
     <ion-list-header>
       <ion-label>Forma Distribuição</ion-label>
     </ion-list-header>
 
     <ion-item>
       <ion-label>Semanal</ion-label>
-      <ion-radio value="semanal" checked></ion-radio>
+      <ion-radio value="Semanal" checked></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Mensal</ion-label>
-      <ion-radio value="mensal" ></ion-radio>
+      <ion-radio value="Mensal"></ion-radio>
     </ion-item>
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="onCadastrarClick($event)">Salvar</button>
+    <button ion-button color="primary" block (click)="onCadastrarClick($event, mesada)">Salvar</button>
   </div>
 </ion-content>

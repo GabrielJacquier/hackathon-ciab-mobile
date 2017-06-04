@@ -6,18 +6,18 @@
     <ion-title>KiBankers</ion-title>
   </ion-navbar>
   <ion-toolbar>
-    <div class="image">
-      <img src="../assets/icon-kids.svg">
-    </div>
     <div class="waves">
       <div class="wave -one"></div>
       <div class="wave -two"></div>
       <div class="wave -three"></div>
     </div>
+    <div class="image">
+      <img src="assets/kids.png">
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list>
     <button class="filho" ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
       <ion-avatar item-left>

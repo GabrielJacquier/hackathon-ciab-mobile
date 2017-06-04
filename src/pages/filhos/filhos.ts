@@ -14,7 +14,7 @@ export class FilhosPage {
     this.items = [];
     this.items.push({
       nome: 'Tamires Polis',
-      icon: '../assets/tamires-thumb.jpg',
+      icon: 'assets/tamires-thumb.jpg',
       cpf: '635.535.851-54',
       tel: '(15)98877-6532',
       senha: '4567',
@@ -22,6 +22,10 @@ export class FilhosPage {
       saldo: 1000,
       idade: 17,
       previdencia: 289,
+      mesada: {
+        frequencia: 'Semanal',
+        valor: 125,
+      },
       detalhesSaldo: [
         {
           data: 'Hoje',
@@ -54,7 +58,7 @@ export class FilhosPage {
         {
           data: '26/04/2017',
           valor: 200
-        }        
+        }
       ]
     });
   }

@@ -19,9 +19,12 @@ page-filhos-detalhe {
   }
 
   .empty {
+    margin-top: 20px;
     color: #888;
+
     h1 {
-      padding:8px;
+      padding:8px 20px;
+      font-size: 2rem;
     }
 
     ion-icon {

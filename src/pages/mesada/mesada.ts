@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FilhosPage } from '../filhos/filhos';
 
 /**
  * Generated class for the MesadaPage page.
@@ -15,12 +14,20 @@ import { FilhosPage } from '../filhos/filhos';
 })
 export class MesadaPage {
 
-  private mesada = {
-    val: 35.00,
-    data: "04/06/2017"
+  public mesada = {
+    valor: 35.00,
+    data: "04/06/2017",
+    frequencia: "Semanal"
   }
 
+  private filho;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.filho = this.navParams.data.filho;
+    if (this.filho.mesada) {
+      this.mesada = this.filho.mesada;
+      this.mesada.data = "04/06/2017";
+    }
   }
 
   ionViewDidLoad() {
@@ -28,6 +35,7 @@ export class MesadaPage {
   }
 
   onCadastrarClick(event, item) {
+    this.filho.mesada = this.mesada;
     this.navCtrl.pop();
   }
 
