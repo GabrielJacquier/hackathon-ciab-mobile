@@ -49,9 +49,6 @@
     <h1 *ngIf="filho.mesada">Tudo já está configurado, mas ainda não temos movimentações.</h1>
   </div>
   <ion-list *ngIf="filho.detalhesSaldo && filho.detalhesSaldo.length > 0">
-    <ion-list-header>
-      Resumo
-    </ion-list-header>
     <ion-item class="detalhe" *ngFor="let detalhe of filho.detalhesSaldo">
       <p class="data">{{detalhe.data}}</p>
       <p class="valor">R$ {{detalhe.valor | number:'1.2-2'}}</p>
