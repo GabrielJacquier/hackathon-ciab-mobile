@@ -23,6 +23,7 @@ export class FilhosCadastroPage {
     datNasc: '06/08/2006',
     idade: '11',
     saldo: 0,
+    icon: '../assets/novo-filho-thumb.png',
     previdencia: 0,
     extrato: [],
     metas: []

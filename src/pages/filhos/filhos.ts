@@ -14,6 +14,7 @@ export class FilhosPage {
     this.items = [];
     this.items.push({
       nome: 'Tamires Polis',
+      icon: '../assets/tamires-thumb.jpg',
       cpf: '635.535.851-54',
       tel: '(15)98877-6532',
       senha: '4567',

@@ -1,62 +1,58 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle>
+  <ion-navbar>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-        <ion-title>KiBank</ion-title>
-    </ion-navbar>
-    <ion-toolbar>
-        <ion-thumbnail item-left>
-            <img src="../assets/user-thumb.jpg" class="img-circle">
-        </ion-thumbnail>
+    <ion-title>Olá Willian ;)</ion-title>
+  </ion-navbar>
+  <ion-toolbar text-center>
+  <!--<ion-thumbnail item-left>
+      <img src="../assets/user-thumb.jpg" class="img-circle">
+  </ion-thumbnail>-->
+    <div class="label">Saldo em conta corrente</div>
+    <div class="saldo">
+      <span class="moeda">R$</span>
+      <span class="valor">2.500,00</span>
+    </div>
 
-        <p>Olá Willian</p>
-        <p>ag 0386 c/c 88531-9</p>
-        <ion-buttons end>
-            <button ion-button icon-only>
-          <ion-icon name="search"></ion-icon>
-        </button>
-        </ion-buttons>
-    </ion-toolbar>
+    <div class="waves">
+      <div class="wave -one" style=""></div>
+      <div class="wave -two" style=""></div>
+      <div class="wave -three"></div>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    <ion-card>
-        <ion-card-header>
-            <ion-icon name="cash-outline"></ion-icon>
-            Saldo em conta corrente
-        </ion-card-header>
+<ion-content>
+  <ion-card class="card-blue">
+    <ion-card-header>
+        <ion-icon name="stats-outline"></ion-icon>
+        Investimentos
 
-        <ion-card-content>
-            <ion-icon name="arrow-down"></ion-icon>
-            <a href="#">expandir</a>
-        </ion-card-content>
+        <div class="saldo">
+          <span class="moeda">R$</span>
+          <span class="valor">20.000,00</span>
+        </div>
+    </ion-card-header>
 
-    </ion-card>
+    <ion-card-content text-right>
+        <a href="#">Ver detalhes <ion-icon name="arrow-round-forward"></ion-icon></a>
+    </ion-card-content>
+  </ion-card>
 
-    <ion-card>
-        <ion-card-header>
-            <ion-icon name="stats-outline"></ion-icon>
-            Investimentos
-        </ion-card-header>
+  <ion-card class="card-dark-blue">
+    <ion-card-header>
+        <ion-icon name="stats-outline"></ion-icon>
+        Cartões de Crédito
 
-        <ion-card-content>
-            <ion-icon name="arrow-down"></ion-icon>
-            <a href="#">expandir</a>
-        </ion-card-content>
+        <div class="saldo">
+          <span class="moeda">R$</span>
+          <span class="valor">2.000,00</span>
+        </div>
+    </ion-card-header>
 
-    </ion-card>
-
-    <ion-card>
-        <ion-card-header>
-            <ion-icon name="card-outline"></ion-icon>
-            Cartões
-        </ion-card-header>
-
-        <ion-card-content>
-            <ion-icon name="arrow-down"></ion-icon>
-            <a href="#">expandir</a>
-        </ion-card-content>
-
-    </ion-card>
+    <ion-card-content text-right>
+        <a href="#">Ver gastos <ion-icon name="arrow-round-forward"></ion-icon></a>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
