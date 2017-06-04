@@ -5,18 +5,13 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>mesada</ion-title>
+    <ion-title>Configurar mesada</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-
   <ion-list>
-
      <ion-item>
       <ion-label stacked>Valor</ion-label>
       <ion-input type="number" value="{{mesada.val}}"></ion-input>
@@ -26,12 +21,9 @@
       <ion-label stacked>Data</ion-label>
       <ion-input type="text"  value="{{mesada.data}}"></ion-input>
     </ion-item>
-
   </ion-list>
 
-  
   <ion-list radio-group >
-    
     <ion-list-header>
       <ion-label>Forma Distribuição</ion-label>
     </ion-list-header>
@@ -40,7 +32,7 @@
       <ion-label>Semanal</ion-label>
       <ion-radio value="semanal" checked></ion-radio>
     </ion-item>
-    
+
     <ion-item>
       <ion-label>Mensal</ion-label>
       <ion-radio value="mensal" ></ion-radio>
@@ -50,5 +42,4 @@
   <div padding>
     <button ion-button color="primary" block (click)="onCadastrarClick($event)">Salvar</button>
   </div>
-
 </ion-content>

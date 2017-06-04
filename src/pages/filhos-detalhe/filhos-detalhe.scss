@@ -1,24 +1,20 @@
 page-filhos-detalhe {
-    .detalhe {
-        .data {
-            float:left;
-        }
 
-        .valor {
-            float: right;
-        }
+  ion-navbar {
+    ion-title {
+      span {
+        float: right;
+      }
     }
+  }
 
-    .perfil {
-        .nome {
-            font-size: 24px;
-        }
-        .saldo {
-            font-size: 16px;
-        }
-    }
+  .detalhe {
+      .data {
+          float:left;
+      }
 
-    .timeline {
-        font-size: 30px;
-    }
+      .valor {
+          float: right;
+      }
+  }
 }

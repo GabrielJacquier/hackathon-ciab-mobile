@@ -4,19 +4,19 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
+<ion-header style="display:none">
+  <ion-navbar hideBackButton="true">
     <ion-title>filhos-cadastro-confirmacao</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <!--<img [src]="slide.image" class="slide-image"/>
-  <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-  <p [innerHTML]="slide.description"></p>-->
-  <p>{{filho.nome}} Cadastrado com sucesso</p>
-  <button ion-button color="primary" block (click)="onOKClick($event)">OK</button>
+  <div class="confirmation" text-center>
+    <img src="../../assets/creditcard.png"/>
+    <p>Parabéns!!!!</p>
+    <p><strong>{{filho.nome}}</strong> foi cadastrado com sucesso.</p>
+    <p>Dentro de 5 dias úteis você receberá o cartão em sua casa. Agora você já pode configurar o valor da mesada do seu novo KiBank.</p>
+    <button ion-button color="primary" block (click)="onOKClick($event)">OK</button>
+  </div>
 </ion-content>

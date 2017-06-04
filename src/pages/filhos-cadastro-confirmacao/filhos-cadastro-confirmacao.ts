@@ -29,6 +29,8 @@ export class FilhosCadastroConfirmacaoPage {
   onOKClick(event) {
     this.navCtrl.push(FilhosDetalhePage, {
       filho: this.filho
+    }).then(() => {
+      this.navCtrl.remove(1,2);
     });
   }
 }

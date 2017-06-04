@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>filhos-cadastro</ion-title>
+    <ion-title>Novo KiBank</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,6 +19,11 @@
     <ion-item>
       <ion-label stacked>Nome</ion-label>
       <ion-input type="text" value="{{filho.nome}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Data Nascimento</ion-label>
+      <ion-input type="text" value="{{filho.datNasc}}"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -39,11 +44,6 @@
     <ion-item>
       <ion-label stacked>Confirmar Senha</ion-label>
       <ion-input type="password" value="{{filho.senha}}"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label stacked>Data Nascimento</ion-label>
-      <ion-input type="text" value="{{filho.datNasc}}"></ion-input>
     </ion-item>
 
   </ion-list>
