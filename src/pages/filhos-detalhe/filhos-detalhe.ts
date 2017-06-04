@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MesadaPage } from '../mesada/mesada';
 import { PerfilPage } from '../perfil/perfil';
+import { SaudePage } from '../saude/saude';
 
 /**
  * Generated class for the FilhosDetalhePage page.
@@ -43,4 +44,10 @@ export class FilhosDetalhePage {
       filho: this.filho
     });
   }
+
+  onSmileClick(event) {
+    this.navCtrl.push(SaudePage, {
+    });
+  }
+
 }
