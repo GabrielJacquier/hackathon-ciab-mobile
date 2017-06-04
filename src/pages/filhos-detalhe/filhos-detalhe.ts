@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MesadaPage } from '../mesada/mesada';
 import { PerfilPage } from '../perfil/perfil';
-import { TimelinePage } from '../timeline/timeline';
 
 /**
  * Generated class for the FilhosDetalhePage page.
@@ -36,18 +35,12 @@ export class FilhosDetalhePage {
   }
 
   onTimelineClick(event) {
-    this.navCtrl.push(TimelinePage, {
-      filho: this.filho
-    });
+    
   }
 
   onMesadaClick(event) {
     this.navCtrl.push(MesadaPage, {
       filho: this.filho
     });
-  }
-
-  onSegmentChanged(event) {
-
   }
 }
