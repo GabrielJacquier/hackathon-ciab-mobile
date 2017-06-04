@@ -16,7 +16,7 @@ import { FilhosPage } from '../filhos/filhos';
 export class MesadaPage {
 
   private mesada = {
-    val: 600.00,
+    val: 35.00,
     data: "04/06/2017"
   }
 
