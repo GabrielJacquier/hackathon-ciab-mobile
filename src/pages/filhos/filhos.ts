@@ -19,7 +19,7 @@ export class FilhosPage {
       tel: '(15)98877-6532',
       senha: '4567',
       datNasc: '06/08/2000',
-      saldo: 1000,
+      saldo: 73.9,
       idade: 17,
       previdencia: 289,
       mesada: {
