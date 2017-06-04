@@ -16,9 +16,8 @@ import { FilhosPage } from '../filhos/filhos';
 export class MesadaPage {
 
   private mesada = {
-    valMensal: 600.00,
-    valDiario: 150.00,
-    data: '05'
+    val: 600.00,
+    data: "04/06/2017"
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -30,17 +29,8 @@ export class MesadaPage {
 
   onCadastrarClick(event, item) {
     this.navCtrl.push(FilhosPage, {
-      
+      mesada: this.mesada
     });
-  }
-
-  mudarVal() {
-    if(this.mesada.valDiario == 150.00) {
-      this.mesada.valDiario = 600.00;
-    }
-    else {
-      this.mesada.valDiario = 150.00
-    }
   }
 
 }
