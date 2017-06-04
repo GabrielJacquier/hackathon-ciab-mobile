@@ -28,7 +28,7 @@
 
         <div style="position:absolute;left:0;right:50%;bottom:8px" text-center>
             <div class="label">Saúde financeira</div>
-            <ion-icon name="happy" style="font-size:4rem"></ion-icon>
+            <ion-icon name="happy" style="font-size:4rem" (click)="onSmileClick($event)"></ion-icon>
         </div>
         <div style="position:absolute;left:50%;right:0;bottom:8px;height:56px;" text-center>
             <div class="label" *ngIf="!filho.mesada">Sem mesada</div>
