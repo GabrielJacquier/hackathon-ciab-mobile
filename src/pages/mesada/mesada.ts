@@ -28,9 +28,7 @@ export class MesadaPage {
   }
 
   onCadastrarClick(event, item) {
-    this.navCtrl.push(FilhosPage, {
-      mesada: this.mesada
-    });
+    this.navCtrl.pop();
   }
 
 }
