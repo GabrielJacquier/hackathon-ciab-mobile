@@ -6,58 +6,58 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>
-      {{filho.nome}}
-      <span>{{filho.idade}} anos</span>
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            {{filho.nome}}
+            <span>{{filho.idade}} anos</span>
+        </ion-title>
+    </ion-navbar>
 
-  <ion-toolbar text-center>
-    <div class="label">Saldo em conta</div>
-    <div class="saldo">
-      <span class="moeda">R$</span>
-      <span class="valor">{{filho.saldo | number:'1.2-2'}}</span>
-    </div>
+    <ion-toolbar text-center>
+        <div class="label">Saldo em conta</div>
+        <div class="saldo">
+            <span class="moeda">R$</span>
+            <span class="valor">{{filho.saldo | number:'1.2-2'}}</span>
+        </div>
 
-    <div class="waves">
-      <div class="wave -one"></div>
-      <div class="wave -two"></div>
-      <div class="wave -three"></div>
-    </div>
+        <div class="waves">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
 
-    <div style="position:absolute;left:0;right:50%;bottom:8px" text-center>
-      <div class="label">Saúde financeira</div>
-      <ion-icon name="happy" style="font-size:4rem"></ion-icon>
-    </div>
-    <div style="position:absolute;left:50%;right:0;bottom:8px;height:56px;" text-center>
-      <div class="label" *ngIf="!filho.mesada">Sem mesada</div>
-      <div class="label" *ngIf="filho.mesada">{{filho.mesada.frequencia}}</div>
-      <div class="saldo" *ngIf="filho.mesada">
-        <span class="moeda" style="font-size:1.4rem;top:6px">R$</span>
-        <span class="valor" style="font-size:3rem;padding-left:20px">{{filho.mesada.valor | number:'1.2-2'}}</span>
-      </div>
-    </div>
-  </ion-toolbar>
+        <div style="position:absolute;left:0;right:50%;bottom:8px" text-center>
+            <div class="label">Saúde financeira</div>
+            <ion-icon name="happy" style="font-size:4rem"></ion-icon>
+        </div>
+        <div style="position:absolute;left:50%;right:0;bottom:8px;height:56px;" text-center>
+            <div class="label" *ngIf="!filho.mesada">Sem mesada</div>
+            <div class="label" *ngIf="filho.mesada">{{filho.mesada.frequencia}}</div>
+            <div class="saldo" *ngIf="filho.mesada">
+                <span class="moeda" style="font-size:1.4rem;top:6px">R$</span>
+                <span class="valor" style="font-size:3rem;padding-left:20px">{{filho.mesada.valor | number:'1.2-2'}}</span>
+            </div>
+        </div>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div *ngIf="filho.detalhesSaldo == null || filho.detalhesSaldo.length == 0" class="empty" text-center>
-    <ion-icon name="basket"></ion-icon>
-    <h1 *ngIf="!filho.mesada">Você precisa confiurar a mesada do seu novo KiBanker, clique no botão acima para fazer isso.</h1>
-    <h1 *ngIf="filho.mesada">Tudo já está configurado, mas ainda não temos movimentações.</h1>
-  </div>
-  <ion-list *ngIf="filho.detalhesSaldo && filho.detalhesSaldo.length > 0">
-    <ion-item class="detalhe" *ngFor="let detalhe of filho.detalhesSaldo">
-      <p class="data">{{detalhe.data}}</p>
-      <p class="valor">R$ {{detalhe.valor | number:'1.2-2'}}</p>
-    </ion-item>
-  </ion-list>
+    <div *ngIf="filho.detalhesSaldo == null || filho.detalhesSaldo.length == 0" class="empty" text-center>
+        <ion-icon name="basket"></ion-icon>
+        <h1 *ngIf="!filho.mesada">Você precisa configurar a mesada do seu novo KiBanker, clique no botão acima para fazer isso.</h1>
+        <h1 *ngIf="filho.mesada">Tudo já está configurado, mas ainda não temos movimentações.</h1>
+    </div>
+    <ion-list *ngIf="filho.detalhesSaldo && filho.detalhesSaldo.length > 0">
+        <ion-item class="detalhe" *ngFor="let detalhe of filho.detalhesSaldo">
+            <p class="data">{{detalhe.data}}</p>
+            <p class="valor">R$ {{detalhe.valor | number:'1.2-2'}}</p>
+        </ion-item>
+    </ion-list>
 
-  <ion-fab top center edge>
-  <!--<ion-fab bottom right>-->
-    <button ion-fab (click)="onMesadaClick($event)">
+    <ion-fab top center edge>
+        <!--<ion-fab bottom right>-->
+        <button ion-fab (click)="onMesadaClick($event)">
       <ion-icon name="cash"></ion-icon>
     </button>
-  </ion-fab>
+    </ion-fab>
 </ion-content>
