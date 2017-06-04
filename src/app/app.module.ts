@@ -10,7 +10,6 @@ import { FilhosCadastroConfirmacaoPage } from '../pages/filhos-cadastro-confirma
 import { FilhosDetalhePage } from '../pages/filhos-detalhe/filhos-detalhe';
 import { MesadaPage } from '../pages/mesada/mesada';
 import { PerfilPage } from '../pages/perfil/perfil';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 

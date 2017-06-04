@@ -1,3 +1,24 @@
 page-filhos-detalhe {
+    .detalhe {
+        .data {
+            float:left;
+        }
 
+        .valor {
+            float: right;
+        }
+    }
+
+    .perfil {
+        .nome {
+            font-size: 24px;
+        }
+        .saldo {
+            font-size: 16px;
+        }
+    }
+
+    .timeline {
+        font-size: 30px;
+    }
 }

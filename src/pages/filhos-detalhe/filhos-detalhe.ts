@@ -43,8 +43,4 @@ export class FilhosDetalhePage {
       filho: this.filho
     });
   }
-
-  onSegmentChanged(event) {
-
-  }
 }
