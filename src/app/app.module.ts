@@ -11,7 +11,6 @@ import { FilhosDetalhePage } from '../pages/filhos-detalhe/filhos-detalhe';
 import { MesadaPage } from '../pages/mesada/mesada';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { TimelinePage } from '../pages/timeline/timeline';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 

@@ -15,4 +15,46 @@
 
 <ion-content padding>
 
+  <ion-list>
+
+     <ion-item>
+      <ion-label stacked>Valor Mensal</ion-label>
+      <ion-input type="number" value="{{mesada.valMensal}}"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label stacked>Data</ion-label>
+      <ion-input type="number" value="{{mesada.data}}"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  
+  <ion-list radio-group (ionChange)="mudarVal()" >
+    
+    <ion-list-header>
+      <ion-label>Forma Distribuição</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Semanal</ion-label>
+      <ion-radio value="semanal" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mensal</ion-label>
+      <ion-radio value="mensal" ></ion-radio>
+    </ion-item>
+  </ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label stacked>Valor Disponibilizado</ion-label>
+    <ion-input type="number" value="{{mesada.valDiario}}"></ion-input>
+  </ion-item>
+</ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block (click)="onCadastrarClick($event)">Cadastrar</button>
+  </div>
+
 </ion-content>
