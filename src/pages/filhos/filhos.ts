@@ -25,7 +25,7 @@ export class FilhosPage {
       detalhesSaldo: [
         {
           data: 'Hoje',
-          valor: 83.90
+          valor: 73.90
         },
         {
           data: 'Ontem',
@@ -33,20 +33,28 @@ export class FilhosPage {
         },
         {
           data: '02/05/2017',
-          valor: 63.90
+          valor: 93.95
         },
         {
           data: '01/05/2017',
-          valor: 57.30
+          valor: 102.15
         },
         {
           data: '29/04/2017',
-          valor: 60
+          valor: 171.50
         },
         {
           data: '28/04/2017',
-          valor: 50
-        }      
+          valor: 178.50
+        },
+        {
+          data: '27/04/2017',
+          valor: 178.50
+        },
+        {
+          data: '26/04/2017',
+          valor: 200
+        }        
       ]
     });
   }

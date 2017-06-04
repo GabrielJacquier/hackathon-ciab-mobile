@@ -12,10 +12,8 @@
     <ion-grid>
       <ion-row>
         <ion-col col-8 col-sm-8>
-          <div class="perfil" (click)="onPerfilClick($event)">
             <p class="nome">{{filho.nome}}</p>
             <p class="saldo">Saldo: R$ {{filho.saldo | number:'1.2-2'}}</p>
-          </div>
         </ion-col>
         <ion-col col-4 col-sm-4>
           <div class="timeline" (click)="onTimelineClick($event)">
