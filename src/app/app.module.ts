@@ -48,7 +48,7 @@ import { SaudePage } from '../pages/saude/saude';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    {provide: LOCALE_ID, useValue: "pt-BR"}
+    {provide: LOCALE_ID, useValue: "en-US"}
   ]
 })
 export class AppModule {}
