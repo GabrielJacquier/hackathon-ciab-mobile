@@ -32,7 +32,7 @@ export class FilhosPage {
           valor: 73.90
         },
         {
-          data: 'Yestarday',
+          data: 'Yesterday',
           valor: 73.90
         },
         {
