@@ -17,8 +17,8 @@ export class FilhosCadastroPage {
 
   private filho = {
     nome: 'Niel Polis',
-    cpf: '535.525.811-54',
-    tel: '(11)98877-2233',
+    cpf: '078-12-5543',
+    tel: '(329) 669-1123',
     senha: '4567',
     datNasc: '06/04/2006',
     idade: '11',

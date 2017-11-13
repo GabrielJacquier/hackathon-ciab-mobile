@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Novo KiBank</ion-title>
+    <ion-title>New KiBanker</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,38 +17,38 @@
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>Nome</ion-label>
+      <ion-label stacked>Name</ion-label>
       <ion-input type="text" value="{{filho.nome}}"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Data Nascimento</ion-label>
+      <ion-label stacked>Date of birth</ion-label>
       <ion-input type="text" value="{{filho.datNasc}}"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>CPF</ion-label>
+      <ion-label stacked>SSN</ion-label>
       <ion-input type="text" value="{{filho.cpf}}"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Celular</ion-label>
+      <ion-label stacked>Phone</ion-label>
       <ion-input type="tel" value="{{filho.tel}}"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Senha (4 dígitos)</ion-label>
+      <ion-label stacked>Password (4 digits)</ion-label>
       <ion-input type="password" value="{{filho.senha}}"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Confirmar Senha</ion-label>
+      <ion-label stacked>Confirm password</ion-label>
       <ion-input type="password" value="{{filho.senha}}"></ion-input>
     </ion-item>
 
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="onCadastrarClick($event)">Cadastrar</button>
+    <button ion-button color="primary" block (click)="onCadastrarClick($event)">Register</button>
   </div>
 </ion-content>

@@ -15,48 +15,48 @@ export class FilhosPage {
     this.items.push({
       nome: 'Tamires Polis',
       icon: 'assets/tamires-thumb.png',
-      cpf: '635.535.851-54',
-      tel: '(15)98877-6532',
+      cpf: '078-08-5629',
+      tel: '(487) 877-6532',
       senha: '4567',
-      datNasc: '06/08/2000',
+      datNasc: '08/06/2000',
       saldo: 73.9,
       idade: 17,
       previdencia: 289,
       mesada: {
-        frequencia: 'Semanal',
+        frequencia: 'Weekly',
         valor: 125,
       },
       detalhesSaldo: [
         {
-          data: 'Hoje',
+          data: 'Today',
           valor: 73.90
         },
         {
-          data: 'Ontem',
+          data: 'Yestarday',
           valor: 73.90
         },
         {
-          data: '02/05/2017',
+          data: '05/02/2017',
           valor: 93.95
         },
         {
-          data: '01/05/2017',
+          data: '05/01/2017',
           valor: 102.15
         },
         {
-          data: '29/04/2017',
+          data: '04/29/2017',
           valor: 171.50
         },
         {
-          data: '28/04/2017',
+          data: '04/28/2017',
           valor: 53.50
         },
         {
-          data: '27/04/2017',
+          data: '04/27/2017',
           valor: 58.70
         },
         {
-          data: '26/04/2017',
+          data: '04/26/2017',
           valor: 102
         }
       ]

@@ -15,18 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SaudePage {
 
   private saudeList = [
-    {mes: 'Junho de 2017', tipo: 1},
-    {mes: 'Maio de 2017', tipo: 1},
-    {mes: 'Abril de 2017', tipo: 1},
-    {mes: 'Março de 2017', tipo: 1},
-    {mes: 'Fevereiro de 2017', tipo: 2},
-    {mes: 'Janeiro de 2017', tipo: 2},
-    {mes: 'Dezembro de 2016', tipo: 2},
-    {mes: 'Novembro de 2016', tipo: 2},
-    {mes: 'Outubro de 2016', tipo: 2},
-    {mes: 'Setembro de 2016', tipo: 1},
-    {mes: 'Agosto de 2016', tipo: 2},
-    {mes: 'Julho de 2016', tipo: 2}
+    {mes: 'June 2017', tipo: 1},
+    {mes: 'May 2017', tipo: 1},
+    {mes: 'April 2017', tipo: 1},
+    {mes: 'March 2017', tipo: 1},
+    {mes: 'February 2017', tipo: 2},
+    {mes: 'January 2017', tipo: 2},
+    {mes: 'December 2016', tipo: 2},
+    {mes: 'November 2016', tipo: 2},
+    {mes: 'October 2016', tipo: 2},
+    {mes: 'September 2016', tipo: 1},
+    {mes: 'August 2016', tipo: 2},
+    {mes: 'July 2016', tipo: 2}
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

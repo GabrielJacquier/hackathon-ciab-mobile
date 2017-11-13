@@ -21,15 +21,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', icon: 'home', component: HomePage },
+      { title: 'Home', icon: 'home', component: HomePage },
       { title: 'KiBank', icon: 'people', component: FilhosPage },
-      { title: 'Investimentos', icon: 'stats', component: HomePage },
-      { title: 'Poupança', icon: 'briefcase', component: HomePage },
-      { title: 'Cartões', icon: 'card', component: HomePage },
-      { title: 'Seguranca', icon: 'lock', component: HomePage },
-      { title: 'Atendimento', icon: 'call', component: HomePage },
-      { title: 'Sair', icon: 'exit', component: HomePage }
-      
+      { title: 'Investments', icon: 'stats', component: HomePage },
+      { title: 'Savings Account', icon: 'briefcase', component: HomePage },
+      { title: 'Credit Cards', icon: 'card', component: HomePage },
+      { title: 'Security', icon: 'lock', component: HomePage },
+      { title: 'Service', icon: 'call', component: HomePage },
+      { title: 'Log Out', icon: 'exit', component: HomePage }
     ];
 
   }

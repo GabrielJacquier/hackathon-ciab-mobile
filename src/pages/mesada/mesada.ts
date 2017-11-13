@@ -16,8 +16,8 @@ export class MesadaPage {
 
   public mesada = {
     valor: 35.00,
-    data: "04/06/2017",
-    frequencia: "Semanal"
+    data: "06/04/2017",
+    frequencia: "Weekly"
   }
 
   private filho;
